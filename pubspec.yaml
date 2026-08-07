@@ -1,0 +1,36 @@
+name: k_assistant
+description: "K - Kshitij's AI assistant, mobile edition"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Networking
+  http: ^1.2.1
+  web_socket_channel: ^2.4.5
+
+  # Audio capture + low-latency raw PCM playback (used for Gemini Live)
+  flutter_sound: ^9.10.5
+  permission_handler: ^11.3.1
+
+  # Storage
+  flutter_secure_storage: ^9.2.2
+  shared_preferences: ^2.2.3
+
+  # Utilities
+  intl: ^0.19.0
+  uuid: ^4.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
